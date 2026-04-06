@@ -1,0 +1,253 @@
+.section {
+  padding: 100px 24px;
+  background: linear-gradient(180deg, transparent, rgba(108,99,255,0.03) 50%, transparent);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(108,99,255,0.1);
+  border: 1px solid rgba(108,99,255,0.25);
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #a99fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: #8888aa;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.toggleActive {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggleInactive {
+  color: #8888aa;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggleBtn {
+  width: 48px;
+  height: 26px;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 100px;
+  position: relative;
+  transition: background 0.3s;
+  flex-shrink: 0;
+}
+
+.toggleBtnOn {
+  background: #6c63ff;
+}
+
+.toggleThumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggleBtnOn .toggleThumb {
+  transform: translateX(22px);
+}
+
+.saveBadge {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  background: rgba(67,233,123,0.15);
+  color: #43e97b;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.popular {
+  border-color: rgba(108,99,255,0.6);
+  background: linear-gradient(180deg, rgba(108,99,255,0.08), var(--color-surface));
+  box-shadow: 0 0 40px rgba(108,99,255,0.15);
+  transform: scale(1.03);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 16px;
+  background: linear-gradient(135deg, #6c63ff, #9c93ff);
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(108,99,255,0.4);
+}
+
+.planName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #8888aa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.currency {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 6px;
+}
+
+.amount {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.period {
+  font-size: 1rem;
+  color: #8888aa;
+  padding-bottom: 6px;
+}
+
+.planDesc {
+  font-size: 0.9rem;
+  color: #8888aa;
+  line-height: 1.6;
+}
+
+.cta {
+  display: block;
+  text-align: center;
+  padding: 13px;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.cta:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.ctaPrimary {
+  background: linear-gradient(135deg, #6c63ff, #9c93ff);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(108,99,255,0.4);
+}
+
+.ctaSecondary {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #e8e8f0;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #c8c8d8;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  background: rgba(67,233,123,0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  color: #43e97b;
+  flex-shrink: 0;
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .popular {
+    transform: scale(1);
+  }
+}
